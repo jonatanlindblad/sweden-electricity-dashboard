@@ -1,0 +1,31 @@
+﻿Year,Category,Share,Data_status,Source,Method
+2015,Fossil,0.0233538644499367,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2015,Nuclear,0.34173210571430157,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2015,Renewable,0.6349140298357617,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2016,Fossil,0.0268480091494675,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2016,Nuclear,0.39717896129653213,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2016,Renewable,0.5759730295540003,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2017,Fossil,0.02281260303773691,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2017,Nuclear,0.39294001927189065,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2017,Renewable,0.5842473776903724,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2018,Fossil,0.023667437835450444,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2018,Nuclear,0.4128306678512518,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2018,Renewable,0.5635018943132977,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2019,Fossil,0.019300955760740535,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2019,Nuclear,0.389317791260435,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2019,Renewable,0.5913812529788246,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2020,Fossil,0.015398123023741994,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2020,Nuclear,0.29452186730308577,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2020,Renewable,0.6900800096731724,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2021,Fossil,0.017956381960969048,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2021,Nuclear,0.30344268520377055,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2021,Renewable,0.6786009328352605,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2022,Fossil,0.017295358177833786,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2022,Nuclear,0.2947033532804876,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2022,Renewable,0.6880012885416786,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2023,Fossil,0.014565246063429127,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2023,Nuclear,0.2863088410287972,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2023,Renewable,0.6991259129077737,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2024,Fossil,0.013510379092935287,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Derived as 1 minus the workbook's fossil-free share.
+2024,Nuclear,0.2878200169806143,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.
+2024,Renewable,0.6986696039264504,Historical,"Energimyndigheten, Energiindikatorer i siffror 2026, sheet 6.1",Share taken from indicator workbook.

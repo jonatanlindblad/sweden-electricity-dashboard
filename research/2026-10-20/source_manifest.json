@@ -1,0 +1,65 @@
+[
+  {
+    "file": "indicators.xlsx",
+    "url": "https://energimyndigheten.a-w2m.se/Arkitektkopia/GetTemplateResource/121?eloid=04e2826433f04ecd97446934225cc0a0&elp=portal&elt=t&fn=Energiindikatorer-i-siffror-2026.xlsx&id=04e2826433f04ecd97446934225cc0a0&lr=False&res=d543e267d97c410ca71b32ce6b76afd9",
+    "resolved_url": "https://energimyndigheten.a-w2m.se/Arkitektkopia/GetTemplateResource/121",
+    "bytes": 1378182
+  },
+  {
+    "file": "lifecycle.xlsx",
+    "url": "https://data.nlr.gov/system/files/171/EF_Table_FINAL.xlsx",
+    "resolved_url": "https://nrel-datacat-public-prod.s3.us-west-2.amazonaws.com/files/171/EF_Table_FINAL.xlsx",
+    "bytes": 28555
+  },
+  {
+    "file": "production.html",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/ElProdAr/",
+    "resolved_url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/ElProdAr/",
+    "bytes": 144910,
+    "downloads": [
+      "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB1010_en.zip"
+    ],
+    "download_results": [
+      {
+        "file": "production_0.zip",
+        "url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB1010_en.zip",
+        "resolved_url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB1010_en.zip",
+        "bytes": 7126
+      }
+    ]
+  },
+  {
+    "file": "fuels.html",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/BrforelARb/",
+    "resolved_url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/BrforelARb/",
+    "bytes": 160179,
+    "downloads": [
+      "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB3125_en.zip"
+    ],
+    "download_results": [
+      {
+        "file": "fuels_0.zip",
+        "url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB3125_en.zip",
+        "resolved_url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB3125_en.zip",
+        "bytes": 37642
+      }
+    ]
+  },
+  {
+    "file": "net_generation.html",
+    "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/ProdBrAnvVGr/",
+    "resolved_url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__EN__EN0105__EN0105A/ProdBrAnvVGr/",
+    "bytes": 135202,
+    "downloads": [
+      "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB4535_en.zip"
+    ],
+    "download_results": [
+      {
+        "file": "net_generation_0.zip",
+        "url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB4535_en.zip",
+        "resolved_url": "https://www.statistikdatabasen.scb.se/Resources/PX/bulk/ssd/en/TAB4535_en.zip",
+        "bytes": 1418
+      }
+    ]
+  }
+]

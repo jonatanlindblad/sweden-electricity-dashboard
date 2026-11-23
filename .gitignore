@@ -1,0 +1,54 @@
+# Local Python environments and generated caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Computer/editor files and credentials.
+.DS_Store
+.vscode/
+.idea/
+.env
+.env.*
+*.pem
+*.key
+~$*
+
+# Course materials remain local.
+/from teacher/
+
+# Research: include reviewed code, notes and source records, not full downloads.
+/research/*
+!/research/2026-10-20/
+/research/2026-10-20/*
+!/research/2026-10-20/source_manifest.json
+!/research/2026-10-20/source_checksums.json
+!/research/2026-11-19/
+/research/2026-11-19/*
+!/research/2026-11-19/download_aib_sources.py
+!/research/2026-11-19/extract_aib_intensity.py
+!/research/2026-11-19/emissions_source_review.md
+!/research/2026-11-19/aib/
+/research/2026-11-19/aib/*
+!/research/2026-11-19/aib/manifest.json
+!/research/2026-11-19/aib/sweden_production_co2_verified.json
+
+# Include the reviewed data products and latest dashboard export only.
+/outputs/*
+!/outputs/electricity_2015_2024.csv
+!/outputs/electricity_analysis_2015_2024.csv
+!/outputs/dashboard_historical_mix.csv
+!/outputs/dashboard_fossil_free_trends.csv
+!/outputs/dashboard_production.csv
+!/outputs/dashboard_sensitivity.csv
+!/outputs/dashboard_co2_intensity.csv
+!/outputs/sweden_electricity_dashboard_v5.pdf
+
+# Temporary validation files and unreviewed Power BI project exports.
+/tmp/
+*.pbix
+*.pbit
+*.pbip
+*.Report/
+*.SemanticModel/

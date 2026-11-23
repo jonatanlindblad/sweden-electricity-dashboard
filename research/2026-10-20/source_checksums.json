@@ -1,0 +1,16 @@
+[
+  {
+    "file": "indicators.xlsx",
+    "sha256": "71ba1da45a0f31d4fd73605a48fb8e06b6f47e3a1fb820542f5ab4d37045d920",
+    "bytes": 1378182,
+    "fingerprint_recorded": "2026-11-23",
+    "note": "Fingerprint of the existing local snapshot; not a new retrieval date."
+  },
+  {
+    "file": "TAB1010_en.csv",
+    "sha256": "b688dcac0570e32ed57e2420dee4329dd2c78b0f2be1d6e2ea01cd5ce7f5c832",
+    "bytes": 48938,
+    "fingerprint_recorded": "2026-11-23",
+    "note": "Fingerprint of the existing local snapshot; not a new retrieval date."
+  }
+]

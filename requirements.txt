@@ -1,0 +1,4 @@
+# Versions used together to validate the full workflow with Python 3.12.
+pandas==2.2.3
+openpyxl==3.1.5
+pypdf==6.21.4
