@@ -1,6 +1,6 @@
 # Repository contents and maintenance
 
-The [Sweden electricity dashboard repository](https://github.com/jonatanlindblad/sweden-electricity-dashboard) was first published on 23 November 2026 and is currently private.
+The [Sweden electricity dashboard repository](https://github.com/jonatanlindblad/sweden-electricity-dashboard) was first published on 23 November 2026.
 
 ## What is included
 
