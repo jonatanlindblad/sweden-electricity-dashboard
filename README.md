@@ -1,6 +1,6 @@
 # Sweden electricity dashboard
 
-A Python and Power BI project about Sweden's domestic electricity production in 2015–2024. It also explores what continuing historical changes in the fossil-free share would imply for 2040.
+A student project using Python and Power BI to explore Sweden's domestic electricity production in 2015–2024. It asks how far Sweden is from 100% fossil-free production and what continuing historical trends would imply for 2040.
 
 The dashboard has four pages:
 
@@ -9,7 +9,7 @@ The dashboard has four pages:
 3. Sensitivity of the scenarios to the historical period used to fit the trend.
 4. Published direct CO₂ intensity of electricity production.
 
-View the [four-page dashboard PDF](outputs/sweden_electricity_dashboard_v5.pdf). The seven CSV files in `outputs/` contain the analysis results and Power BI inputs. The editable Power BI report and data model are not included.
+View the [four-page dashboard PDF (v7)](outputs/sweden_electricity_dashboard_v7.pdf). The seven CSV files in `outputs/` contain the analysis results and Power BI inputs. The editable Power BI report and data model are not included.
 
 ## Project structure
 
@@ -22,9 +22,9 @@ View the [four-page dashboard PDF](outputs/sweden_electricity_dashboard_v5.pdf).
 
 ## Set up Python
 
-Use Python 3.12 and the package versions in [requirements.txt](requirements.txt). The full analysis sequence passed with this setup. The file fixes the versions of the three packages used directly by the scripts; it does not fix every package they depend on.
+Use Python 3.12 with the versions in [requirements.txt](requirements.txt). The full analysis sequence passed with this setup. The file specifies versions for the three packages used directly by the scripts, but not for their dependencies (the other packages they need).
 
-From the project folder, create a virtual environment: a folder containing this project's Python packages. If `.venv` already exists, use a different folder name in both commands below to preserve it.
+From the project folder, create a virtual environment: a folder containing this project's Python packages. If `.venv` already exists, use a different name in the creation and activation commands below to preserve it.
 
 macOS/Linux:
 
@@ -44,11 +44,11 @@ python -m pip install -r requirements.txt
 
 `pandas` handles tables, `openpyxl` reads Excel files, and `pypdf` extracts PDF text. Python supplies the other imported modules. Do not use `python -O`: the scripts use `assert` checks, which that option disables.
 
-A fresh package installation has not been tested. Results were compared with the existing Python 3.14 setup; small differences in the final decimal places did not change displayed values. See [validation details](methods_note.md#validation).
+A fresh package installation has not been tested. Results from the tested Python 3.12 and development Python 3.14 environments agreed at the precision displayed in the dashboard. See [validation details](methods_note.md#validation) for the small differences in final decimal places.
 
 ## Restore the inputs
 
-The saved CSVs and PDF can be viewed without running Python. A new checkout needs local source files before regenerating the complete analysis. Follow [SOURCES.md](SOURCES.md) to restore:
+The saved CSVs and PDF can be viewed without running Python. To regenerate the analysis from a downloaded copy of the repository, follow [SOURCES.md](SOURCES.md) to restore these local inputs:
 
 - `research/2026-10-20/indicators.xlsx`
 - `research/2026-10-20/TAB1010_en.csv`
@@ -90,7 +90,7 @@ python prepare_dashboard_co2_intensity.py
 | `research/2026-11-19/extract_aib_intensity.py` | Reads selected archived reports and writes `aib/sweden_production_co2_verified.json`, 10 records with references and checks. |
 | `prepare_dashboard_co2_intensity.py` | Writes `dashboard_co2_intensity.csv`, 10 annual published estimates. |
 
-The remaining script, `research/2026-11-19/download_aib_sources.py`, downloads a new AIB archive and refuses to overwrite an existing folder. To investigate new sources, set a new destination in that script and review the documents before changing the extraction settings. To restore the existing inputs, follow SOURCES instead: numbered filenames from a new download may differ if the website's links change.
+The remaining script, `research/2026-11-19/download_aib_sources.py`, downloads a new AIB archive and refuses to overwrite an existing folder. To investigate new sources, set a new destination in that script and review the documents before changing the extraction settings. To restore the existing inputs, follow [SOURCES.md](SOURCES.md): numbered filenames from a new download may differ if the website's links change.
 
 ## Connect the outputs to Power BI
 
@@ -102,21 +102,21 @@ Import the five `dashboard_*.csv` files as separate tables. The two `electricity
 | `dashboard_fossil_free_trends.csv` / FossilFreeTrends | `Year`, `Series`, `Share`: line chart. Keep Year decimal and use a continuous axis to preserve the fractional 100% crossing. Format Share as percentage. |
 | `dashboard_production.csv` / Production | `Year`, `Category`, `Production_TWh`: annual production. Endpoint change is 2024 minus 2015 for each category. |
 | `dashboard_sensitivity.csv` / Sensitivity | `Trend_period`, `Slope_pp_per_year`, `Outcome_by_2040`: comparison of historical windows. Slope is a decimal number in percentage points/year, not percentage formatting. Anchor_share and Share_2040 are fractions suitable for percentage formatting. |
-| `dashboard_co2_intensity.csv` / CO2Intensity | `Year`, `CO2_g_per_kWh`, `Factor_period`: annual columns, decimal intensity in g CO₂/kWh. Use Factor_period to mark the 2022 method boundary. |
+| `dashboard_co2_intensity.csv` / CO2Intensity | `Year`, `CO2_g_per_kWh`, `Factor_period`: annual columns, decimal intensity in g CO₂/kWh. Use Factor_period for the colour change marking AIB's change of input emission-factor source in 2022. |
 
 Sort years ascending. Keep blank 2040 sensitivity shares blank: those scenarios ended at the 100% boundary earlier. Use one annual intensity value per year (for example Average when there is exactly one row); do not sum intensities across years. Do not add together all three historical share categories across multiple years.
 
-Each page can use its own table. Remove unnecessary automatically created relationships; CO2Intensity should not serve as the shared list of years for other tables. These are setup instructions; the current online data model has not been checked against them.
+Each page can use its own table. Check automatically created relationships (links between tables) and remove any that are unnecessary. CO2Intensity should not serve as the shared list of years for other tables. The online data model has not been checked against these instructions.
 
 ## Interpretation and limitations
 
-Fossil-free share = renewable share + nuclear share. Shares concern domestic production, not imports or consumption. The scenarios assume that a fitted annual change continues from the observed 2024 share. Chart lines end at 2040 or 100%, whichever comes first. These are conditional examples, not forecasts or probabilities of reaching the goal.
+Fossil-free share = renewable share + nuclear share. Shares concern domestic production, not imports or consumption. The scenarios assume that the fitted annual change continues unchanged from the observed 2024 share. Chart lines end at 2040 or 100%, whichever comes first. These are conditional examples, not forecasts or probabilities of reaching the goal.
 
 The workbook gives a 2024 fossil-free share of about 98.65%, compared with 98.8% in a published summary; the difference remains unresolved. SCB production volumes are kept separate from the workbook's shares because their compatibility has not been established. The project therefore does not estimate fossil electricity production in TWh.
 
 AIB's CO₂ intensity measures emissions per unit of electricity, excluding biogenic CO₂ and lifecycle emissions. Its emission-factor source changed in 2022, so year-to-year differences can reflect both production and method changes. Lower intensity alone does not establish lower annual emissions. The [methods note](methods_note.md) explains the calculations, source differences and other limitations.
 
-The analysis and charts use statistics from Energimyndigheten, Statistics Sweden and AIB. They are the project's calculations and presentation, not official agency results. Source references are retained in the data files.
+The calculations and charts are this project's work based on statistics from Energimyndigheten, Statistics Sweden and AIB. They are not official agency results. Source references are retained in the data files.
 
 ## Coding style
 

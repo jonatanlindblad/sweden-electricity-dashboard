@@ -15,7 +15,7 @@ __pycache__/
 *.key
 ~$*
 
-# Course materials remain local.
+# Teacher materials remain local.
 /from teacher/
 
 # Research: include reviewed code, notes and source records, not full downloads.
@@ -34,7 +34,7 @@ __pycache__/
 !/research/2026-11-19/aib/manifest.json
 !/research/2026-11-19/aib/sweden_production_co2_verified.json
 
-# Include the reviewed data products and latest dashboard export only.
+# Keep reports, feedback and other drafts local; include these outputs only.
 /outputs/*
 !/outputs/electricity_2015_2024.csv
 !/outputs/electricity_analysis_2015_2024.csv
@@ -43,7 +43,9 @@ __pycache__/
 !/outputs/dashboard_production.csv
 !/outputs/dashboard_sensitivity.csv
 !/outputs/dashboard_co2_intensity.csv
+# Retain the earlier published export alongside the current dashboard.
 !/outputs/sweden_electricity_dashboard_v5.pdf
+!/outputs/sweden_electricity_dashboard_v7.pdf
 
 # Temporary validation files and unreviewed Power BI project exports.
 /tmp/
